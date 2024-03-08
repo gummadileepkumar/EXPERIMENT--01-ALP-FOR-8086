@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+### Name : Gumma Dileep Kumar
+### Roll no : 212222240032
+### Date of experiment :
 
 
 
@@ -77,26 +77,113 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
-
-
-
+## Addition of 8 bit ALP  
+```python
+org 100h
+MOV al,11h;
+MOV bl,20h;
+ADD al,bl;
+MOV [6379h],al;
+ret
+```
 ## Output  
+ ![PMC_1 1](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/794de7db-ae43-44a6-89b7-1dca2afeade0)
+
  
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
+## Subtraction of 8 bit ALP
+```python
+org 100h
+MOV al,20h;
+MOV bl,[8778h];
+SUB bl,al;
+MOV [8798h],bl;
+ret
+```
+## Output
+![PMC_1 2](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/246ab351-f7a0-4af6-900f-254cb03e2e45)
+
+
+## Multiplication ALP
+```python
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6063h],bl;
+ret
+```
  ## Output  
+![PMC_1 3](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/f9185e67-7762-401a-98e8-352e32d4c86d)
 
 
-## Division alp 
-
+## Division ALP
+```python
+org 100h
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+ret
+```
 ## Output  
+![PMC_1 4](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/be699045-32fc-40ef-80ab-2c6a61a2f477)
+
+
+## Programs for logical  operations
+
+## AND
+```python
+org 100h
+MOV bx,1000h;
+AND bx,1111h;
+MOV [0040h+02],bx;
+ret
+```
+## Output 
+![PMC_1 5](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/44a5726a-01ae-4468-ad33-0ca505204a98)
+
+
+## OR
+```python
+org 100h
+MOV ax,[0070h];
+MOV bx,1000h;
+OR ax,bx;
+MOV [0060h],ax;
+ret
+```
+## Output
+![PMC_1 6](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/356a216e-a9f8-41b7-8c09-540a43467ff5)
+
+
+## NOT
+```python
+org 100h
+MOV bx,0060h;
+MOV ax,[bx]; 
+NOT al;
+MOV [0060h+04],ax;
+ret
+```
+## Output
+
+![PMC_1 7](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/cc96dc8a-031a-4f02-827d-12fbade9af48)
+
+## XOR
+```python
+org 100h
+MOV bx,0050h;
+MOV ax,[bx]; 
+XOR ax,bx;
+MOV [0050h+03],ax;
+ret
+```
+## Output
+![PMC_1 8](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/f4251ca4-5d65-49cd-a824-efa6e8579359)
 
 
 ## Result :
- 
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
 
 
 
