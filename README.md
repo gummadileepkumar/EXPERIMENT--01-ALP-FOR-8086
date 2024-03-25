@@ -79,28 +79,27 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition of 8 bit ALP  
 ```python
-org 100h
-MOV al,11h;
-MOV bl,20h;
-ADD al,bl;
-MOV [6379h],al;
-ret
+Mov AL,74H
+Mov BL,69H
+Add AL,BL
+HLT
 ```
 ## Output  
- ![PMC_1 1](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/794de7db-ae43-44a6-89b7-1dca2afeade0)
+ 
+![Addition](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/5f44a6c1-d56d-49ef-b0f9-a676ba1958e4)
 
  
 ## Subtraction of 8 bit ALP
 ```python
-org 100h
-MOV al,20h;
-MOV bl,[8778h];
-SUB bl,al;
-MOV [8798h],bl;
-ret
+Mov AL,84H
+Mov BL,63H
+Sub AL,BL
+HLT
 ```
 ## Output
-![PMC_1 2](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/246ab351-f7a0-4af6-900f-254cb03e2e45)
+![Subtraction](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/76414450-d504-4abe-a5be-7b307cbcab90)
+
+
 
 
 ## Multiplication ALP
@@ -133,41 +132,40 @@ ret
 
 ## AND
 ```python
-org 100h
-MOV bx,1000h;
-AND bx,1111h;
-MOV [0040h+02],bx;
-ret
+Mov AL,33H
+Mov BL,44H
+AND AL,BL
+HLT
 ```
 ## Output 
-![PMC_1 5](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/44a5726a-01ae-4468-ad33-0ca505204a98)
+![AND_operation](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/2d0ef273-3047-406d-9254-260b3ceb2c65)
+
 
 
 ## OR
 ```python
-org 100h
-MOV ax,[0070h];
-MOV bx,1000h;
-OR ax,bx;
-MOV [0060h],ax;
-ret
+Mov AL,45H
+Mov BL,66H
+OR AL,BL
+HLT
 ```
 ## Output
-![PMC_1 6](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/356a216e-a9f8-41b7-8c09-540a43467ff5)
+![OR_Operation](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/91fdce70-6088-4e6b-b43f-49d929f4d0ca)
+
 
 
 ## NOT
 ```python
-org 100h
-MOV bx,0060h;
-MOV ax,[bx]; 
-NOT al;
-MOV [0060h+04],ax;
-ret
+Mov AL,65H
+NOT AL
+HLT
+
+
 ```
 ## Output
 
-![PMC_1 7](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/cc96dc8a-031a-4f02-827d-12fbade9af48)
+![NOT_Operation](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/bae841d8-499f-46f7-a221-e994de1be223)
+
 
 ## XOR
 ```python
