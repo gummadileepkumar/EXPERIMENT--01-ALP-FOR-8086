@@ -178,6 +178,7 @@ HLT
 
 ## XOR
 ```python
+org 100h
 MOV AL,66H
 MOV BL,77H
 XOR AL,BL
