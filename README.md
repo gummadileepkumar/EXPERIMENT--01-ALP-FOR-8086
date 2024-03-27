@@ -108,14 +108,15 @@ HLT
 org 100h
 MOV AL,75H
 MOV BL,32H
-MUL AL,BL
+MUL BL
 HLT
 
 ret
 ```
  ## Output  
 
-![Multi](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/5f32e482-1059-4910-a854-c64f4ff3ba37)
+![multi](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/c0f9a189-728b-4690-ae07-54ce4e214fb6)
+
 
 
 ## Division ALP
@@ -124,14 +125,16 @@ ret
 org 100h
 MOV AL,68H
 MOV BL,18H
-DIV AL,BL
+DIV BL
 HLT
+
 
 ret
 ```
 ## Output  
-![Divi](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/db17ab75-0e97-4f1f-95c0-8b7c095ae0a5)
 
+
+![Div](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/d250c921-5e59-449d-acd4-7ada80ecf5fd)
 
 
 ## Programs for logical  operations
@@ -175,15 +178,14 @@ HLT
 
 ## XOR
 ```python
-org 100h
-MOV bx,0050h;
-MOV ax,[bx]; 
-XOR ax,bx;
-MOV [0050h+03],ax;
+MOV AL,66H
+MOV BL,77H
+XOR AL,BL
+HLT
 ret
 ```
 ## Output
-![PMC_1 8](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/f4251ca4-5d65-49cd-a824-efa6e8579359)
+![Xor](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/99260262-9e4e-4449-aead-407c9e2eda0c)
 
 
 ## Result :
