@@ -104,28 +104,34 @@ HLT
 
 ## Multiplication ALP
 ```python
+
 org 100h
-MOV al,13h;
-MOV bl,2h;
-MUL bl;
-MOV [6063h],bl;
+MOV AL,75H
+MOV BL,32H
+MUL AL,BL
+HLT
+
 ret
 ```
  ## Output  
-![PMC_1 3](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/f9185e67-7762-401a-98e8-352e32d4c86d)
+
+![Multi](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/5f32e482-1059-4910-a854-c64f4ff3ba37)
 
 
 ## Division ALP
 ```python
+
 org 100h
-MOV al,26h;
-MOV bl,[2369h];
-DIV bl;
-MOV [2399h],al;
+MOV AL,68H
+MOV BL,18H
+DIV AL,BL
+HLT
+
 ret
 ```
 ## Output  
-![PMC_1 4](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/be699045-32fc-40ef-80ab-2c6a61a2f477)
+![Divi](https://github.com/gummadileepkumar/EXPERIMENT--01-ALP-FOR-8086/assets/118707761/db17ab75-0e97-4f1f-95c0-8b7c095ae0a5)
+
 
 
 ## Programs for logical  operations
